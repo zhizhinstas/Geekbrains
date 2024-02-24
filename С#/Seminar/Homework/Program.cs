@@ -74,9 +74,9 @@ int[] ArraySwap(int[] array, int index)
     array[array.Length - index - 1] = temp;
     return ArraySwap(array, index -= 2);
 }
-string PrintArray(int [] array)
-        {
-            return string.Join(", ",array);
-        }
+string PrintArray(int[] array)
+{
+    return string.Join(", ", array);
+}
 Console.WriteLine($"Произвольный массив => [{PrintArray(array)}]");
-Console.WriteLine($"Перевернутый массив => [{PrintArray(ArraySwap(array,array.Length-1))}]");
+Console.WriteLine($"Перевернутый массив => [{PrintArray(ArraySwap(array, array.Length - 1))}]");
